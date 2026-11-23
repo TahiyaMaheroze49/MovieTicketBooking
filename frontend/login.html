@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CineBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cine<span>Book</span></div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#movies">Movies</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="details-section">
+
+        <section class="booking-selection">
+
+            <h1>Welcome Back!</h1>
+            <p>Login to continue booking your favourite movies.</p>
+
+            <form id="loginForm">
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit" class="continue-btn">
+                    Login
+                </button>
+
+                <p id="loginMessage"></p>
+
+            </form>
+
+            <p>
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>CineBook</h2>
+        <p>Your favourite movies, your favourite seats.</p>
+        <p>© 2026 CineBook. All Rights Reserved.</p>
+    </footer>
+<script src="js/login.js"></script>
+</body>
+</html>

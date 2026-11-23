@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details - CineBook</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Cine<span>Book</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#movies">Movies</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Movie Details -->
+    <main class="details-section">
+
+        <p class="tagline">MOVIE INFORMATION</p>
+
+        <div id="movieDetails" class="movie-details">
+            <!-- Movie information will appear here -->
+        </div>
+
+        <!-- Cinema Selection -->
+        <section class="booking-selection">
+
+            <h2>Choose Your Cinema</h2>
+
+            <select id="cinemaSelect">
+    <option value="">Loading cinemas...</option>
+</select>
+
+            <h2>Select Date</h2>
+
+            <input
+                type="date"
+                id="showDate"
+            >
+
+            <h2>Choose Show Time</h2>
+
+           <div class="show-times" id="showTimes">
+    <p>Please select a cinema and date first.</p>
+</div>
+
+            <p id="bookingMessage"></p>
+
+            <button class="continue-btn"
+                onclick="continueToSeats()">
+                Continue to Seat Selection
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>CineBook</h2>
+        <p>Your favourite movies, your favourite seats.</p>
+        <p>© 2026 CineBook. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/movie.js"></script>
+
+</body>
+</html>

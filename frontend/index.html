@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineBook - Movie Ticket Booking</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Cine<span>Book</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <p class="tagline">YOUR CINEMA EXPERIENCE STARTS HERE</p>
+
+            <h1>Movies are better<br>
+                on the <span>BIG SCREEN.</span>
+            </h1>
+
+            <p>
+                Discover your favourite movies and book your
+                tickets in just a few clicks.
+            </p>
+
+            <a href="#movies" class="hero-btn">Explore Movies</a>
+        </div>
+
+    </section>
+
+    <!-- Movies Section -->
+    <main class="movies-section" id="movies">
+
+        <div class="section-heading">
+            <div>
+                <p class="tagline">NOW SHOWING</p>
+                <h2>Available Movies</h2>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search movies by name or genre..."
+            >
+
+            <button onclick="searchMovies()">Search</button>
+        </div>
+
+        <!-- Movie Cards will appear here -->
+        <div class="movie-container" id="movieContainer">
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No movies found. Try another search.
+        </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>CineBook</h2>
+        <p>Your favourite movies, your favourite seats.</p>
+        <p>© 2026 CineBook. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

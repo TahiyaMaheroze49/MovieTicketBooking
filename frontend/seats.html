@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Seats - CineBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>CineBook</h2>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <section class="seats-section">
+
+        <h1>Select Your Seats</h1>
+
+        <div id="showInfo"></div>
+
+        <div class="seat-legend">
+            <span><i class="legend-box available"></i> Available</span>
+            <span><i class="legend-box selected"></i> Selected</span>
+            <span><i class="legend-box booked"></i> Booked</span>
+        </div>
+
+        <div class="screen">SCREEN THIS WAY</div>
+
+        <div id="seatContainer"></div>
+
+        <div class="seat-summary">
+            <h2>Booking Summary</h2>
+
+            <p>Selected Seats: <span id="selectedSeats">None</span></p>
+
+            <p>Total Amount: ₹<span id="totalAmount">0</span></p>
+
+            <button onclick="continueToCheckout()">
+                Continue to Checkout
+            </button>
+
+            <p id="seatMessage"></p>
+        </div>
+
+    </section>
+
+    <script src="js/seats.js"></script>
+</body>
+</html>

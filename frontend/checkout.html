@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - CineBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>CineBook</h2>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <section class="checkout-section">
+
+        <h1>Complete Your Booking</h1>
+
+        <div class="checkout-container">
+
+            <!-- Booking Summary -->
+            <div class="checkout-summary">
+                <h2>Booking Summary</h2>
+
+                <div id="checkoutMovie">
+                    Loading booking details...
+                </div>
+
+                <hr>
+
+                <h3>Total Amount: ₹<span id="checkoutTotal">0</span></h3>
+            </div>
+
+            <!-- Customer Details Form -->
+            <div class="customer-form">
+                <h2>Customer Details</h2>
+
+                <form id="checkoutForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <label for="customerEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="customerEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="customerPhone">Mobile Number</label>
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        placeholder="Enter 10-digit mobile number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required
+                    >
+
+                    
+<h3>Payment Method</h3>
+
+<div class="payment-options">
+
+    <label for="paymentMethod">Choose Payment Method</label>
+
+    <select id="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="UPI">UPI</option>
+        <option value="Card">Credit / Debit Card</option>
+        <option value="Cash">Cash at Counter</option>
+    </select>
+
+    <p class="payment-note">
+        Demo Payment: No real money will be charged.
+    </p>
+
+</div>
+
+
+                    <button type="submit" class="confirm-btn">
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+                <p id="checkoutMessage"></p>
+            </div>
+
+        </div>
+
+        <!-- Booking Confirmation -->
+        <div id="confirmationBox" class="confirmation-box"
+             style="display: none;">
+
+            <h2>Booking Confirmed!</h2>
+
+            <p>Your movie tickets have been booked successfully.</p>
+
+            <h3>Your Ticket ID:</h3>
+            <h2 id="ticketId"></h2>
+
+            <p id="confirmationDetails"></p>
+
+            <button onclick="window.location.href='index.html'">
+                Back to Home
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>
