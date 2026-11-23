@@ -1,3 +1,5 @@
+// Load environment variables FIRST
+require("dotenv").config();
 
 // Import Express
 const express = require("express");
