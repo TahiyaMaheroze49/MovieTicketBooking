@@ -1,6 +1,6 @@
 
-const CINEMA_API = "http://localhost:5000/cinemas";
-const SHOW_API = "http://localhost:5000/shows";
+const CINEMA_API = "http://https://movieticketbooking-0amx.onrender.com/cinemas";
+const SHOW_API = "http://https://movieticketbooking-0amx.onrender.com/shows";
 
 // Get selected movie
 const movieData = localStorage.getItem("selectedMovie");

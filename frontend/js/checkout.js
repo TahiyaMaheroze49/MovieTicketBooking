@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:5000/bookings";
+const API_URL = "http://https://movieticketbooking-0amx.onrender.com/bookings";
 
 // Get booking details from seat selection
 const bookingDetails = JSON.parse(

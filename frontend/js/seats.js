@@ -52,7 +52,7 @@ async function fetchBookedSeats() {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/shows/${selectedShow.showId}/seats`
+            `http://https://movieticketbooking-0amx.onrender.com/shows/${selectedShow.showId}/seats`
         );
 
         if (!response.ok) {

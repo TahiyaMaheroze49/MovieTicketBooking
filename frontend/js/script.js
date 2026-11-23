@@ -1,6 +1,6 @@
 
 // API URL to get movies from MySQL
-const API_URL = "http://localhost:5000/movies";
+const API_URL = "http://https://movieticketbooking-0amx.onrender.com/movies";
 
 // Store movies fetched from the database
 let movies = [];

@@ -11,7 +11,7 @@ loginForm.addEventListener("submit", async function(event) {
 
     try {
         // Send login details to the backend
-        const response = await fetch("http://localhost:5000/auth/login", {
+        const response = await fetch("http://https://movieticketbooking-0amx.onrender.com/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

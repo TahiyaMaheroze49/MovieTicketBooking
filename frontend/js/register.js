@@ -21,7 +21,7 @@ registerForm.addEventListener("submit", async function(event) {
 
     try {
         // Send registration details to the backend
-        const response = await fetch("http://localhost:5000/auth/register", {
+        const response = await fetch("http://https://movieticketbooking-0amx.onrender.com/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
